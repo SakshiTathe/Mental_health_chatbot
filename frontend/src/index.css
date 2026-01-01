@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+/* //navbar css */
+.navbar {
+    font-family: cursive;
+    font-size: 17px;
+    line-height: 26px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px gray;
+    --webkit-box-shadow: 0 8px 6px -6px gray;
+    border-bottom: solid gray !important;
+}
+
+.nav-link {
+    font-weight: 300 !important;
+    color: #2c3e50;
+}
+
+.active {
+    border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-family: cursive;
+    letter-spacing: 3px;
+    color: #2c3e50;
+}
+
+
+.footer {
+    font-family: cursive;
+    color: white;
+    padding: 25px;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,
+            #434343,
+            #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.footer a:hover {
+    color: #ffefba;
+    border-bottom: 1px solid #ffefba;
+}
+
+.pnf {
+    display: flex;
+    min-height: 65vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pnf-title {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.pnf-heading {
+    font-weight: normal;
+}
+
+.pnf-btn {
+    color: #2c3e50;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.pnf-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.contactus {
+    margin: 0;
+    padding: 0;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drops {
+    margin-right: 80px;
+}
+
+
+.main-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 295px;
+    background-color: #8d69ce;
+    transition: all 0.3s ease;
+    height: 90vh;
+}
+
+.sidebar.collapsed {
+    width: 0;
+    overflow: hidden;
+}
+
+.chat-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+/*     align-items: center;
+ */    background: linear-gradient(135deg, #e0f7fa, #f0f0f0);
+    overflow: hidden;
+}
+
+.chat-centered {
+    width: 100%;
+    max-width: 700px;
+    padding-inline: 1rem;
+    height: 80vh;
+    /* fill height but give breathing space */
+    display: flex;
+    flex-direction: column;
+/*     justify-content: space-between;
+ */}
+
+.toggle-sidebar-btn {
+    position: absolute;
+    top: 76px;
+    left: 193px;
+    z-index: 1000;
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #478ddd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.toggle-sidebar-btn:hover {
+    background-color: #357abd;
+}
+
+.toggle-sidebar-btn.expanded {
+    background-color: #1e88e5;
+}
+
+.toggle-sidebar-btn.collapsed {
+    left: 10px;
+}

@@ -1,0 +1,112 @@
+/* Full-page aesthetic setup */
+
+/* Hero section */
+.hero {
+    position: relative;
+    height: 60vh;
+    background: linear-gradient(0deg,#d0c6e3,#9ed5d2);
+/*     background-color: linear-gradient(0deg,rgba(161, 250, 255, 1) 100%, rgba(240, 163, 208, 1) 0%);
+ */    /* background: url("../assets/img/img9.jpeg") center/cover no-repeat; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 auto;
+    transition: all 0.8s ease;
+}
+
+.slide img {
+    border-radius: 12px;
+    object-fit: cover;
+    transition: all 0.8s ease;
+    margin: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Middle image bigger */
+.slide.active img {
+    width: 500px;
+    height: 400px;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Side images smaller */
+.slide.side img {
+    width: 250px;
+    height: 200px;
+    opacity: 0.6;
+}
+
+/* Hero text styling */
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Section spacing */
+.section {
+    padding: 60px 0;
+}
+
+/* Arrows */
+.prev,
+.next {
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    background: #ddb7db;
+    user-select: none;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+    background: #b3e7f5
+}
+
+/* Arrow positioning in flex layout */
+.prev {
+    margin-right: 20px;
+}
+
+.next {
+    margin-left: 20px;
+}

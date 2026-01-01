@@ -1,0 +1,36 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f6f4eb;
+    color: #333;
+}
+
+h2,
+h3,
+h4 {
+    color: #6a9fb5;
+}
+
+.about-col {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-col:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+#call-to-action {
+    background: linear-gradient(135deg, #558193, #c8759f);
+}
+
+#call-to-action a {
+    color: #6a9fb5;
+    background: #fff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#call-to-action a:hover {
+    background: #f6f4eb;
+    color: #333;
+}
