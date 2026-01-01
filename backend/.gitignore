@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+myenv/
+venv/
+env/
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.swp
